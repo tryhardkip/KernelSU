@@ -153,10 +153,6 @@
 #include "hook/kp_ksud.c"
 #endif
 
-#ifdef CONFIG_KSU_SUSFS
-#include <linux/susfs.h>
-#endif // #ifdef CONFIG_KSU_SUSFS
-
 // track backports and other quirks here
 // ref: kernel_compat.c, Makefile
 // yes looks nasty
@@ -266,10 +262,6 @@ static int __init kernelsu_init(void)
 	ksu_allowlist_init();
 
 	ksu_throne_tracker_init();
-
-#ifdef CONFIG_KSU_SUSFS
-    susfs_init();
-#endif // #ifdef CONFIG_KSU_SUSFS
 
 	ksu_ksud_init();
 
