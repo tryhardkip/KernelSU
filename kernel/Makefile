@@ -12,8 +12,8 @@ $(info -- KDIR: $(KDIR))
 $(info -- MDIR: $(MDIR))
 
 # KSU VERSION
-KSU_VERSION := 33276
-KSU_VERSION_TAG := v3.3.0
+KSU_VERSION := 33301
+KSU_VERSION_TAG := v3.4.0
 
 ccflags-y += -DKSU_VERSION=$(KSU_VERSION)
 ccflags-y += -DKSU_VERSION_TAG=\"$(KSU_VERSION_TAG)\"
